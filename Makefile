@@ -1,6 +1,6 @@
 #vpath %.dll .
 
-NIMFLAGS = -d=release -d=mingw -d=strip --opt=size
+NIMFLAGS = -d=release -d=mingw -d=strip --opt=size --mm=orc --threads=on
 #NIMFLAGS = -d=debug -d=mingw --embedsrc=on --hints=on
 
 DLLS = $(notdir $(wildcard build/*.dll))
